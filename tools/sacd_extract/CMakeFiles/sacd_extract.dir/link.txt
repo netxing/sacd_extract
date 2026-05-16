@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/sacd_extract.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/sacd_extract.dir/objects.a @CMakeFiles/sacd_extract.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -I/mnt/c/Users/Administrator/Desktop/1/libs/libiconv-mingw/include -O3 -march=x86-64 -flto -fomit-frame-pointer -fno-math-errno -ffunction-sections -fdata-sections -L/mnt/c/Users/Administrator/Desktop/1/libs/libiconv-mingw/lib -flto -O3 -s -Wl,--gc-sections -Wl,--whole-archive CMakeFiles/sacd_extract.dir/objects.a -Wl,--no-whole-archive -o sacd_extract.exe -Wl,--out-implib,libsacd_extract.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/sacd_extract.dir/linkLibs.rsp
