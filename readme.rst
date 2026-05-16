@@ -112,12 +112,12 @@ Windows binary compilation on Linux using Mingw-w64 preceded by iconv compilatio
 The following from netxing
 
 1. New Compilation 
-===============
+===================
 Install mingw-w64, cmake, and make, then go to tools/sacd_extract/ and run bash build_mingw.sh.
 
 
 2.Key Fix 
-===============
+===================
 [Optimizations]
 
 1. Added automatic filename length checking. If the full path exceeds 255 characters, the filename is automatically truncated.
