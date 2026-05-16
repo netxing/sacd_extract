@@ -15,6 +15,7 @@ Disclaimer
 
 What this is
 ============
+(Origin from /sendmind)
 
 This is a fork of sacd-ripper/sacd-ripper.  For original release documents, please refer to https://github.com/sacd-ripper/sacd-ripper .  This fork focuses only on improvement of sacd_extract, so most of the irrelevant codes have been removed.
 
@@ -107,20 +108,28 @@ Windows binary compilation on Linux using Mingw-w64 preceded by iconv compilatio
     $ make
 
 
-New Compilation
 ==========================================================================
+The following from netxing
+
+1. New Compilation 
+===============
 Install mingw-w64, cmake, and make, then go to tools/sacd_extract/ and run bash build_mingw.sh.
 
 
-Key Fix 
-===========
-
+2.Key Fix 
+===============
 [Optimizations]
 
-1. Added automatic filename length checking. If the full path exceeds 255    characters, the filename is automatically truncated.
+1. Added automatic filename length checking. If the full path exceeds 255 characters, the filename is automatically truncated.
+
 2.The .cue file is now saved together with the ISO and DSF files, and is written only after all extraction tasks are completed.
+
 3.The message displayed after CUE generation is now shown on a separate line, and the FILE attribute points to the ISO file.
+
 4. If the target extraction directory already exists, no new directory is created; existing files are overwritten directly.
+
 5. Fixed garbled characters in the status message when generating ISO files with the -I parameter.
+
 6. Added an informational message when multichannel extraction fails during stereo extraction.
+
 7. Downloaded the libiconv dependency directly into the project directory.
